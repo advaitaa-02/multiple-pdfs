@@ -77,6 +77,11 @@ def main():
 
     st.header("Chat with multiple PDFs :books:")
     user_question = st.text_input("Ask a question about your documents:")
+
+    # st.write(user_template.replace("{{MSG}}","Hello robot"),unsafe_allow_html=True)
+    # st.write(bot_template.replace("{{MSG}}","Hello human"),unsafe_allow_html=True)
+    
+
     if user_question:
         handle_userinput(user_question)
 
